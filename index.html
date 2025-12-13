@@ -3,7 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Teja Kommuri | Cloud & DevOps Engineer</title>
+  <title>Teja Mahendra Sai Kommuri | Cloud & DevOps Engineer</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
 
   <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -29,7 +32,7 @@
 
     body {
       margin: 0;
-      font-family: "Segoe UI", sans-serif;
+      font-family: 'Poppins', sans-serif;
       background: var(--bg);
       color: var(--text);
       transition: 0.3s ease;
@@ -60,7 +63,6 @@
       opacity: 1;
     }
 
-    /* Theme toggle */
     #themeToggle {
       background: none;
       border: none;
@@ -76,17 +78,18 @@
     }
 
     .hero h1 {
-      font-size: 56px;
+      font-size: 64px;
       font-weight: 800;
       margin-bottom: 10px;
-      background: linear-gradient(120deg, #60a5fa, #a855f7);
+      background: linear-gradient(90deg, #ff6ec4, #7873f5, #4ade80);
       -webkit-background-clip: text;
       color: transparent;
+      text-shadow: 0 0 25px rgba(120, 115, 245, 0.4);
     }
 
     .hero p {
       font-size: 18px;
-      opacity: 0.8;
+      opacity: 0.85;
       margin-bottom: 20px;
     }
 
@@ -96,17 +99,28 @@
     }
 
     .social a {
-      font-size: 28px;
-      margin: 0 10px;
-      color: var(--text);
-      opacity: 0.8;
-      transition: 0.3s;
+      font-size: 32px;
+      margin: 0 12px;
+      transition: 0.3s ease;
     }
 
-    .social a:hover {
-      opacity: 1;
-      color: var(--accent);
+    .social a i {
+      padding: 12px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.05);
+      transition: 0.3s ease;
     }
+
+    .social a:hover i {
+      transform: scale(1.2);
+      box-shadow: 0 0 15px rgba(255,255,255,0.4);
+    }
+
+    /* Brand Colors */
+    .fa-instagram { color: #e1306c; }
+    .fa-whatsapp  { color: #25D366; }
+    .fa-linkedin  { color: #0077b5; }
+    .fa-github    { color: #333; }
 
     /* Section */
     section {
@@ -141,7 +155,27 @@
       transform: translateY(-5px);
       border-color: var(--accent);
     }
-    
+
+    /* Contact */
+    form input, form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 12px;
+      border-radius: 8px;
+      border: 1px solid rgba(255,255,255,0.2);
+      background: rgba(255,255,255,0.05);
+      color: var(--text);
+    }
+
+    form button {
+      padding: 12px 20px;
+      background: var(--accent);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
     /* Resume Modal */
     .modal {
       display: none;
@@ -188,7 +222,8 @@
   <nav>
     <div><strong>Teja Kommuri</strong></div>
     <div>
-      <a href="#projects">Projects</a>      
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
       <button id="themeToggle">🌙</button>
     </div>
   </nav>
@@ -229,6 +264,16 @@
     </div>
   </section>
 
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form onsubmit="alert('Message sent!'); return false;">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="4" placeholder="Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
 
   <!-- Resume Modal -->
   <div id="resumeModal" class="modal">
