@@ -156,25 +156,6 @@
       border-color: var(--accent);
     }
 
-    /* Contact */
-    form input, form textarea {
-      width: 100%;
-      padding: 12px;
-      margin-bottom: 12px;
-      border-radius: 8px;
-      border: 1px solid rgba(255,255,255,0.2);
-      background: rgba(255,255,255,0.05);
-      color: var(--text);
-    }
-
-    form button {
-      padding: 12px 20px;
-      background: var(--accent);
-      color: white;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-    }
 
     /* Resume Modal */
     .modal {
@@ -256,25 +237,11 @@
       <div class="project">
         <h3>Jenkins CI/CD Pipeline</h3>
         <p>Automated build & deploy pipeline for web apps.</p>
-      </div>
-      <div class="project">
-        <h3>Monitoring Setup</h3>
-        <p>Configured logs & metrics for Linux servers.</p>
-      </div>
+      </div>      
     </div>
   </section>
 
-  <!-- Contact -->
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <form onsubmit="alert('Message sent!'); return false;">
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea rows="4" placeholder="Message" required></textarea>
-      <button type="submit">Send</button>
-    </form>
-  </section>
-
+ 
   <!-- Resume Modal -->
   <div id="resumeModal" class="modal">
     <div class="modal-content">
